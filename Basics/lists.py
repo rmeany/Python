@@ -1,6 +1,6 @@
 #Lists
 my_list = [1,2,'3',True]
-print(len(my_list)) #4
+len(my_list) #4
 my_list.append(100) # [1,2,'3',True,100]
 my_list.extend([101,102]) # [1,2,'3',True,100,101,102]
 my_list.insert(2, '?') # [1,2,'?','3',True,100,101,102]
@@ -20,15 +20,15 @@ my_list = [1,9,3,7]
 my_list.sort() #Orders list by lowest->highest [1,3,7,9]
 my_list.sort(reverse=True) #Orders list by highest->lowest [9,7,3,1]
 my_list.reverse() #Reverses list [7,3,9,1]
-print(sorted(my_list)) # [1,3,7,9]
-print(list(reversed([1,9,3,7]))) #Reverses list [7,3,9,1]
+sorted(my_list) # [1,3,7,9]
+list(reversed([1,9,3,7])) #Reverses list [7,3,9,1]
 
 #Handy Operations
 my_list = [1,2,30,4,5]
-print(2 in my_list) #True
-print(min(my_list)) #1
-print(max(my_list)) #30
-print(sum(my_list)) #42
+2 in my_list #True
+min(my_list) #1
+max(my_list) #30
+sum(my_list) #42
 
 #List Comprehensions
 [char for char in 'Hello'] #New List -> ['H','e','l','l','o']
